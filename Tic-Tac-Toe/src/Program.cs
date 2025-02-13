@@ -1,7 +1,9 @@
-﻿namespace TicTacToeConsoleApp {
-    public class TicTacToe {
-        
-        static void Main() {
+﻿namespace TicTacToeConsoleApp 
+{
+    public class TicTacToe 
+    {    
+        static void Main() 
+        {
             // string menuInput = "";
             bool doAppLoop = true;
             string choice;
@@ -31,6 +33,5 @@
             Console.WriteLine("\tExiting. Press any key to continue...");
             Console.Read();
         }
-
     }
 }
