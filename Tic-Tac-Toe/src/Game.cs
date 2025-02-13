@@ -11,12 +11,16 @@ namespace TicTacToeConsoleApp
 
             do
             {
-                // Game menu
-                Console.WriteLine("\n\n\t x. squares to be selected.");
-                Console.Write("\n\tEnter a number to make a move or \"exit\" to exit the game: ");
-                menuInput = Console.ReadLine().ToLower();
+                // Current board
+                Console.WriteLine("\n\n\t\t[ Current Board State ]");
 
-                switch (menuInput) {
+                // Game menu
+                Console.WriteLine("\n\t x. squares to be selected.");
+                Console.Write("\n\tEnter a number to make a move or \"exit\" to exit the game: ");
+                menuInput = Console.ReadLine()!.Trim().ToLower();
+
+                switch (menuInput) 
+                {
                     case "exit":
                         doGameLoop = false;
                         break;

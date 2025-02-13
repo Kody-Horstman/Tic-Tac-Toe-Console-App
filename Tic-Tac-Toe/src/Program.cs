@@ -9,15 +9,17 @@
             string choice;
             Game game = new();
 
-            do {
+            do 
+            {
                 // Print menu
                 Console.WriteLine("\n\tWelcome to Tic-Tac-Toe!\n");
                 Console.WriteLine("\t 1. Start a game of Tic-Tac-Toe.");
                 Console.Write("\n\tEnter a number or \"exit\": ");
-                choice = Console.ReadLine().ToLower();
+                choice = Console.ReadLine()!.Trim().ToLower();
             
 
-                switch (choice) {
+                switch (choice) 
+                {
                     case "1":
                         game.startGame();
                         break;
